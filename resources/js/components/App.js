@@ -57,42 +57,6 @@ export default class App extends Component {
         ).catch(
             errors => console.log(errors)
         );
-        axios({
-            method: 'post',
-            url: '/api/users'
-        }).then(
-            response => {
-                this.setState({
-                    users: response.data
-                });
-            }
-        ).catch(
-            errors => console.log(errors)
-        );
-        axios({
-            method: 'put/patch',
-            url: '/api/users'
-        }).then(
-            response => {
-                this.setState({
-                    users: response.data
-                });
-            }
-        ).catch(
-            errors => console.log(errors)
-        );
-        axios({
-            method: 'delete',
-            url: '/api/users'
-        }).then(
-            response => {
-                this.setState({
-                    users: response.data
-                });
-            }
-        ).catch(
-            errors => console.log(errors)
-        );
     }
 
     render() {
